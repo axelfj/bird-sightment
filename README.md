@@ -1,10 +1,12 @@
 # P1BD1-Ornitología #
 
-Autores :
+## Creditos
 
--Brenes Maleaño Andrés Ottón
--Fernández Jiménez Axel Alejandro
--Lopez Saborio Iván Moises
+Brenes Maleaño Andrés Brenes.
+
+Fernández Jiménez Axel Alejandro.
+
+Lopez Saborio Iván Móises.
 
 # Descripción #
 
