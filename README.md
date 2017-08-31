@@ -1,5 +1,9 @@
 # P1BD1-Ornitología #
 
+## Descripción del proyecto
+
+Se debe crear una base de datos que registre avistamiento de aves, registrado por usuarios.
+
 ## Creditos
 
 Brenes Maleaño Andrés Brenes.
