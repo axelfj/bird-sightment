@@ -6,6 +6,8 @@ http://flickity.metafizzy.co
   position: relative;
 }
 
+
+
 .flickity-enabled:focus { outline: none; }
 
 .flickity-viewport {
@@ -13,6 +15,7 @@ http://flickity.metafizzy.co
   position: relative;
   height: 100%;
 }
+
 
 .flickity-slider {
   position: absolute;
@@ -99,6 +102,7 @@ http://flickity.metafizzy.co
 .flickity-prev-next-button .arrow {
   fill: #333;
 }
+
 
 /* color & size if no SVG - IE8 and Android 2.3 */
 .flickity-prev-next-button.no-svg {
