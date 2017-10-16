@@ -1,6 +1,10 @@
 <?php
+    session_start();
+    if(isset($_SESSION['USER_ID'])) { // Recuerda usar corchetes.
+        header('Location: login.php');
+    }
     include ("functions.php");
-    registerUser();
+    $nick = registerUser();
 ?>
 <!DOCTYPE html>
 <html >
@@ -104,7 +108,7 @@
 </div>
 
 <div class="login">
-    <h1>Successful</h1>
+    <h1>Welcome <?php echo($nick); ?>!</h1>
     <form action="\DBP1/" method="post">
         <button type="submit" class="btn btn-primary btn-block btn-large">Home</button>
     </form>

@@ -1,15 +1,20 @@
 <?php
-session_start();
-if(isset($_SESSION['USER_ID'])) { // Recuerda usar corchetes.
-    header('Location: social.php');
-}
+    session_start();
+    if(empty($_SESSION['USER_ID'])) { // Recuerda usar corchetes.
+        header('Location: login.php');
+    }
+    include ('php/functions.php');
 ?>
 <!DOCTYPE html>
-<html >
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Register</title>
-
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Bird House</title>
+    <link rel="stylesheet" href="css/social1.css">
+    <link rel="stylesheet" href="css/social2.css">
+    <link rel='stylesheet' href=''>
+    <link rel="stylesheet" href="css/social3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,7 +53,7 @@ if(isset($_SESSION['USER_ID'])) { // Recuerda usar corchetes.
         }
         .login {
             position: absolute;
-            top: 40%;
+            top: 50%;
             left: 50%;
             margin: -150px 0 0 -150px;
             width:300px;
@@ -76,50 +81,58 @@ if(isset($_SESSION['USER_ID'])) { // Recuerda usar corchetes.
             transition: box-shadow .5s ease;
         }
         input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
-
+        <style>
+         html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+            position: absolute;
+            height: 50%;
+            width: 25%;
+            left: 70%;
+            bottom: 30%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
     </style>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
 </head>
-
-<body background="img/bg.jpg" scroll="no" style="overflow: hidden">
-<div class="container">
-    <div class="hero">
-
-        <div class="hero__back hero__back--static">
-        </div>
-        <div class="hero__back hero__back--mover"></div>
-        <div class="hero__front">
-
-        </div>
+<body class=" w3-theme-d5">
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK67GQM_P0GgmSjBFUApOI2T74Md5s_bc&callback=initMap">
+</script>
+<div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+        <a href="social.php" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Bird House</a>
+        <a href="sightsMap.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Sights map"><i class="fa fa-map-o"></i></a>
+        <a href="addSight.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Add sight"><i class="fa fa-plus-square"></i></a>
+        <a href="php/logout.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right" title="Logout"><i class="fa fa-lock"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right" title="Account Settings"><i class="fa fa-user"></i></a>
+        <?php
+        if(isset($_SESSION['ADMIN_ID'])) { // Recuerda usar corchetes.
+            echo ("<a href=\"adminTools.php\" class=\"w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right\" 
+                        title=\"Admin Tools\"><i class=\"fa fa-cube\"></i></a>");
+        }
+        ?>
     </div>
-    <header class="codrops-header">
-        <h1 class="codrops-title">Bird House <span>Network</span></h1>
-
-        <nav class="menu">
-            <a class="menu__item" href="index.php"><span>Home</span></a>
-            <a class="menu__item menu__item--current" href="#"><span>Register</span></a>
-            <a class="menu__item" href="login.php"><span>Login</span></a>
-        </nav>
-    </header>
 </div>
-
+<section>
+</section>
 <div class="login">
-    <h1>Register</h1>
-    <form action="php/registered.php" method="post">
-        <input type="text" name="name" maxlength="6" placeholder="Name" required="required"><br>
-        <input type="text" name="lastname" placeholder="Last Name" required="required"><br>
-        <input type="text" name="nick" placeholder="Nick" required="required"><br>
-        <input type="text" name="profession" placeholder="Profession" required="required"><br>
-        <input type="email" name="mail" placeholder="Email" required="required"><br>
-        <input type="password" name="pass" placeholder="Password" required="required"><br>
-        <input type="date" name="birth" required="required"><br>
-        <button type="submit" class="btn btn-primary btn-block btn-large">Register</button>
+    <h1 id="#latitude">Change password</h1>
+    <form action="php/changePass.php" method="post" enctype="multipart/form-data">
+        <input type="password" name="currpass" placeholder="Password" required="required"/>
+        <input type="password" name="newpass" placeholder="New password" required="required"/>
+        <button type="submit" class="btn btn-primary btn-block btn-large">Change</button>
     </form>
+
 </div>
-
-<script  src="js/index.js"></script>
-
+<!-- End Page Container -->
+<br>
 </body>
 </html>
+
