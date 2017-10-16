@@ -1,0 +1,75 @@
+-- Clase Aves.
+INSERT INTO ANML_CLASS(CLASS_ID, CLASS_NAME)
+VALUES(1, 'Aves');
+
+-- Orden Passeriformes.
+INSERT INTO ANML_ORDER(ORDER_ID, ORDER_NAME, CLASS_ID)
+VALUES(1, 'Passeriformes', 1);
+
+-- Suborden Passeri.
+INSERT INTO ANML_SUBORDER(SUBORDER_ID,SUBORDER_NAME, ORDER_ID)
+VALUES(1, 'Passeri', 1);
+
+-- Familia Emberizidae.
+INSERT INTO ANML_FAMILY(FAMILY_ID, FAMILY_NAME, SUBORDER_ID)
+VALUES(1, 'Emberizidae', 1);
+
+-- Ingreso de géneros y especies.
+-- Espiguero Variable.
+INSERT INTO ANML_GENDER(GENDER_ID, GENDER_NAME, FAMILY_ID)
+VALUES(1, 'Sporophila', 1);
+
+INSERT INTO ANML_SPECIE(SPECIE_ID, SCIENTIFIC_NAME, SPECIE_NAME, SPANISH_NAME, ENGLISH_NAME, SPECIE_SIZE, SPECIE_COLOR, DANGER_OF_EXTINCTION, GENDER_ID)
+VALUES(1, 'Sporophila Corvina', 'Espiguero Variable', 'Espiguero Variable', 'Variable Seedeater', 11.5, 'Negro', 0, 1); 
+      
+-- Semillero Cariamarillo.
+INSERT INTO ANML_GENDER(GENDER_ID, GENDER_NAME, FAMILY_ID)
+VALUES(2,'Tiaris', 1);
+
+INSERT INTO ANML_SPECIE(SPECIE_ID, SCIENTIFIC_NAME, SPECIE_NAME,SPANISH_NAME,ENGLISH_NAME, SPECIE_SIZE, SPECIE_COLOR, DANGER_OF_EXTINCTION, GENDER_ID)
+VALUES(2, 'Tiaris Olivaceus', 'Semillerito Cariamarillo', 'Semillerito Cariamarillo', 'Yellow-faced Grassquit', 11, 'Oliváceo', 0, 2);
+
+-- Pinchaflor Plomizo.
+INSERT INTO ANML_GENDER(GENDER_ID, GENDER_NAME, FAMILY_ID)
+VALUES(3,'Diglossa', 1);
+
+INSERT INTO ANML_SPECIE(SPECIE_ID, SCIENTIFIC_NAME, SPECIE_NAME,SPANISH_NAME,ENGLISH_NAME, SPECIE_SIZE, SPECIE_COLOR, DANGER_OF_EXTINCTION, GENDER_ID)
+VALUES(3, 'Diglossa Plumbea', 'Pinchaflor Plomizo', 'Pinchaflor Plomizo', 'Slaty Flowerpiercer', 10.5, 'Gris', 0, 3);
+
+-- Pinzón Piquinaranja.
+INSERT INTO ANML_GENDER(GENDER_ID, GENDER_NAME, FAMILY_ID)
+VALUES(4, 'Arremon', 1);
+
+INSERT INTO ANML_SPECIE(SPECIE_ID, SCIENTIFIC_NAME, SPECIE_NAME,SPANISH_NAME,ENGLISH_NAME, SPECIE_SIZE, SPECIE_COLOR, DANGER_OF_EXTINCTION, GENDER_ID)
+VALUES(4, 'Arremon Aurantiirostris', 'Pinzón Piquinaranja', 'Pinzón Piquinaranja', 'Orange-billed Sparrow', 16, 'Oliváceo', 0, 4);
+
+-- Pinzón Cabecilistado.
+INSERT INTO ANML_GENDER(GENDER_ID, GENDER_NAME, FAMILY_ID)
+VALUES(5,'Arremonops', 1);
+
+INSERT INTO ANML_SPECIE(SPECIE_ID, SCIENTIFIC_NAME, SPECIE_NAME,SPANISH_NAME,ENGLISH_NAME, SPECIE_SIZE, SPECIE_COLOR, DANGER_OF_EXTINCTION, GENDER_ID)
+VALUES(5, 'Arremonops Conirostris', 'Pinzón Cabecilistado', 'Pinzón Cabecilistado', 'Black-striped Sparrow', 16, 'Oliváceo', 0, 5);
+
+-- Saltón Gargantiamarilla.
+INSERT INTO ANML_GENDER(GENDER_ID, GENDER_NAME, FAMILY_ID)
+VALUES(6,'Atlapetes', 1);
+
+INSERT INTO ANML_SPECIE(SPECIE_ID, SCIENTIFIC_NAME, SPECIE_NAME,SPANISH_NAME,ENGLISH_NAME, SPECIE_SIZE, SPECIE_COLOR, DANGER_OF_EXTINCTION, GENDER_ID)
+VALUES(6, 'Atlapetes Albinucha', 'Saltón Gargantiamarilla', 'Saltón Gargantiamarilla', 'White-Naped Brush-Finch', 17, 'Negro', 0, 6);
+
+-- Comemaíz.
+INSERT INTO ANML_GENDER(GENDER_ID, GENDER_NAME, FAMILY_ID)
+VALUES(7,'Zonotrichia', 1);
+
+INSERT INTO ANML_SPECIE(SPECIE_ID, SCIENTIFIC_NAME, SPECIE_NAME,SPANISH_NAME,ENGLISH_NAME, SPECIE_SIZE, SPECIE_COLOR, DANGER_OF_EXTINCTION, GENDER_ID)
+VALUES(7, 'Zonotrichia Capensis', 'Comemaíz', 'Comemaíz', 'Rufous-Collared Sparrow', 14, 'Café', 0, 7);
+
+-- Tangara de Monte Orejuda.
+INSERT INTO ANML_GENDER(GENDER_ID, GENDER_NAME, FAMILY_ID)
+VALUES(8, 'Chlorospingus', 1);
+
+INSERT INTO ANML_SPECIE(SPECIE_ID, SCIENTIFIC_NAME, SPECIE_NAME,SPANISH_NAME,ENGLISH_NAME, SPECIE_SIZE, SPECIE_COLOR, DANGER_OF_EXTINCTION, GENDER_ID)
+VALUES(8, 'Chlorospingus Flavopectus', 'Tangara de Monte Orejuda', 'Tangara de Monte Orejuda', 'Common Chlorospingus', 13, 'Oliváceo', 0, 8);
+ 
+
+COMMIT;
