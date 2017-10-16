@@ -1,9 +1,9 @@
 <?php
-    session_start();
-    if(empty($_SESSION['ADMIN_ID'])) { // Recuerda usar corchetes.
-        header('Location: social.php');
-    }
-    include ("php/functions.php");
+session_start();
+if(empty($_SESSION['ADMIN_ID'])) { // Recuerda usar corchetes.
+    header('Location: social.php');
+}
+include ("php/functions.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -53,13 +53,25 @@
         }
         .login {
             position: absolute;
-            top: 50%;
-            left: 50%;
+            top: 35%;
+            left: 13%;
             margin: -150px 0 0 -150px;
             width:300px;
             height:300px;
         }
+
         .login h1 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
+
+        .login2 {
+            position: absolute;
+            top: 50%;
+            left: 54%;
+            margin: -150px 0 0 -150px;
+            width:300px;
+            height:250px;
+        }
+
+        .login2 h1 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
 
         input {
             width: 100%;
@@ -99,23 +111,173 @@
             padding: 0;
         }
     </style>
+
 </head>
-<body class=" w3-theme-d5">
+<body class=" w3-theme-d5" scroll="no" style="overflow: hidden">
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK67GQM_P0GgmSjBFUApOI2T74Md5s_bc&callback=initMap">
+</script>
+<script>
+
+    var provincia = 0;
+    var canton = 0;
+    var distrito = 0;
+    var clase = 0;
+    var orden = 0;
+    var suborden = 0;
+    var familia = 0;
+    var genero = 0;
+    var especie = 0;
+    var tamano = 0;
+    var color = "";
+
+    function addOpt(oCntrl, iPos, sTxt, sVal){
+        var selOpcion=new Option(sTxt, sVal);
+        eval(oCntrl.options[iPos]=selOpcion);
+    }
+
+    function cambiaCanton(obj,oCntrl){
+        var val = obj.value;
+        provincia = parseInt(val);
+        while (oCntrl.length) oCntrl.remove(0);
+        switch (provincia){
+
+            case 0:
+                addOpt(oCntrl,  0, "Filtrar por  canton", "0");
+                break;
+        <?php
+            addCanton();
+            ?>
+        }
+    }
+
+    function cambiaDistrito(obj,oCntrl){
+        var val = obj.value;
+        canton = parseInt(val);
+        while (oCntrl.length) oCntrl.remove(0);
+        switch (canton){
+            case 0:
+                addOpt(oCntrl, 0, "Filtrar por  distrito", "0");
+                break;
+
+        <?php
+            addDistrict();
+            ?>
+        }
+    }
+
+    function setDistrito(obj) {
+        var val = obj.value;
+        distrito = parseInt(val);
+        if(distrito == 0){
+            document.getElementById("district").value = null;
+        } else {
+            document.getElementById("district").value = distrito;
+        }
+    }
+
+    function cambiaOrden(obj,oCntrl){
+        var val = obj.value;
+        clase = parseInt(val);
+        while (oCntrl.length) oCntrl.remove(0);
+        switch (clase){
+
+            case 0:
+                addOpt(oCntrl, 0, "Filtrar por  orden", "0");
+                break;
+
+        <?php
+            addOrder();
+            ?>
+        }
+    }
+
+    function cambiaSuborden(obj,oCntrl){
+        var val = obj.value;
+        orden = parseInt(val);
+        while (oCntrl.length) oCntrl.remove(0);
+        switch (parseInt(val)){
+
+            case 0:
+                addOpt(oCntrl, 0, "Filtrar por  suborden", "0");
+                break;
+
+        <?php
+            addSuborder();
+            ?>
+        }
+    }
+
+    function cambiaFamilia(obj,oCntrl){
+        var val = obj.value;
+        suborden = parseInt(val);
+        while (oCntrl.length) oCntrl.remove(0);
+        switch (parseInt(val)){
+
+            case 0:
+                addOpt(oCntrl, 0, "Filtrar por  familia", "0");
+                break;
+
+        <?php
+            addFamily();
+            ?>
+        }
+    }
+
+    function cambiaGenero(obj,oCntrl){
+        var val = obj.value;
+        familia = parseInt(val);
+        while (oCntrl.length) oCntrl.remove(0);
+        switch (parseInt(val)){
+
+            case 0:
+                addOpt(oCntrl, 0, "Filtrar por  genero", "0");
+                break;
+
+        <?php
+            addGender();
+            ?>
+        }
+    }
+
+    function cambiaEspecie(obj,oCntrl){
+        var val = obj.value;
+        genero = parseInt(val);
+        while (oCntrl.length) oCntrl.remove(0);
+        switch (parseInt(val)){
+
+            case 0:
+                addOpt(oCntrl, 0, "Filtrar por  distrito", "0");
+                break;
+
+        <?php
+            addSpecie();
+            ?>
+        }
+    }
+
+    function setEspecie(obj) {
+        var val = obj.value;
+        especie = parseInt(val);
+        if(especie == 0){
+            document.getElementById("specie").value = null;
+        } else {
+            document.getElementById("specie").value = especie;
+        }
+    }
 </script>
 
 <div class="w3-top">
     <div class="w3-bar w3-theme-d4 w3-left-align w3-large" style="background-color: #9d9d9d">
         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
         <a href="adminTools_stats.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Birds stats"><i class="fa fa-envira"></i> Stats</a>
-        <a href="adminTools_addClass.php" class="w3-center w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Add class"><i class="fa fa-plus-square"></i> Class</a>
+        <a href="#" class="w3-center w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-theme-d1" title="Add class"><i class="fa fa-plus-square"></i> Class</a>
         <a href="adminTools_addOrder.php" class="w3-center w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Add order"><i class="fa fa-plus-square"></i> Order</a>
         <a href="adminTools_addSuborder.php" class="w3-center w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Add suborder"><i class="fa fa-plus-square"></i> Suborder</a>
         <a href="adminTools_addFamily.php" class="w3-center w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Add family"><i class="fa fa-plus-square"></i> Family</a>
         <a href="adminTools_addGender.php" class="w3-center w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Add gender"><i class="fa fa-plus-square"></i> Gender</a>
         <a href="adminTools_addSpecie.php" class="w3-center w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Add specie"><i class="fa fa-plus-square"></i> Specie</a>
-        <a href="#" class="w3-center w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-theme-d1" title="Check users"><i class="fa fa-users"></i> Users</a>
+        <a href="adminTools.php" class="w3-center w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Check users"><i class="fa fa-users"></i> Users</a>
         <a href="social.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right" title="Exit Admin Tools"><i class="fa fa-cube"></i> Exit</a>
     </div>
 </div>
@@ -158,30 +320,6 @@
                 </div>
             </div>
 
-            <?php
-            loadUsers();
-            ?>
-
-            <!--
-            <div class="w3-container w3-card-2 w3-white w3-round w3-margin w3-row-padding"><br>
-                <img src="img/user+.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                <span class="w3-right w3-opacity">Date</span>
-                <h5>Nickname</h5><br>
-                <hr class="w3-clear">
-                <p><i class="fa fa-location-arrow fa-fw w3-margin-right w3-text-theme"></i> Country, Province, Canton, District.</p>
-                <div class="w3-row-padding" style="margin:0 -16px">
-                    <div class="w3-image">
-                        <img src="sight/animals-snake-bird-photo-background-694x417.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
-                    </div>
-                </div>
-                <button type="button" class="w3-button w3-margin-bottom"><i class="fa fa-star"></i></button>
-                <button type="button" class="w3-button w3-margin-bottom"><i class="fa fa-star"></i></button>
-                <button type="button" class="w3-button w3-margin-bottom"><i class="fa fa-star"></i></button>
-                <button type="button" class="w3-button w3-margin-bottom"><i class="fa fa-star"></i></button>
-                <button type="button" class="w3-button w3-margin-bottom"><i class="fa fa-star"></i></button>
-                <span class="w3-right w3-opacity">Calification: 0</span>
-            </div>-->
-
             <!-- End Middle Column -->
         </div>
 
@@ -189,11 +327,27 @@
         <div class="w3-col m2">
 
 
-            <div class="w3-hover-text-gray w3-round w3-padding-32 w3-center">
+
+            <div class="login">
+                <form name="frm">
+                    <select class="w3-grey btn-large" name="class" style="position: absolute; top: 0%;left: 367%">
+                        <option value="0">Seleccionar clase</option>
+                        <?php
+                        addClass();
+                        ?>
+                    </select>
+                    <h6></h6>
+                </form>
             </div>
-            <?php
-            //loadTop();
-            ?>
+            <div class="login2">
+                <form name="frm2"  action="php/addAnml.php" method="post" enctype="multipart/form-data">
+                    <input hidden type="number" name="type" value="1" required="required" />
+                    <input type="text" name="name" placeholder="Name" required="required" />
+                    <button type="submit" class="btn btn-primary btn-block btn-large">Add</button>
+                </form>
+            </div>
+            <!-- End Page Container -->
+            <br>
 
             <!-- End Right Column -->
         </div>

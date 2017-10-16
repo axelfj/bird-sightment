@@ -1,9 +1,9 @@
 <?php
-    session_start();
-    if(empty($_SESSION['ADMIN_ID'])) { // Recuerda usar corchetes.
-        header('Location: social.php');
-    }
-    include ("php/functions.php");
+session_start();
+if(empty($_SESSION['ADMIN_ID'])) { // Recuerda usar corchetes.
+    header('Location: social.php');
+}
+include ("php/functions.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -108,14 +108,14 @@
 <div class="w3-top">
     <div class="w3-bar w3-theme-d4 w3-left-align w3-large" style="background-color: #9d9d9d">
         <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-        <a href="adminTools_stats.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Birds stats"><i class="fa fa-envira"></i> Stats</a>
+        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-theme-d1" title="Birds stats"><i class="fa fa-envira"></i> Stats</a>
         <a href="adminTools_addClass.php" class="w3-center w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Add class"><i class="fa fa-plus-square"></i> Class</a>
         <a href="adminTools_addOrder.php" class="w3-center w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Add order"><i class="fa fa-plus-square"></i> Order</a>
         <a href="adminTools_addSuborder.php" class="w3-center w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Add suborder"><i class="fa fa-plus-square"></i> Suborder</a>
         <a href="adminTools_addFamily.php" class="w3-center w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Add family"><i class="fa fa-plus-square"></i> Family</a>
         <a href="adminTools_addGender.php" class="w3-center w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Add gender"><i class="fa fa-plus-square"></i> Gender</a>
         <a href="adminTools_addSpecie.php" class="w3-center w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Add specie"><i class="fa fa-plus-square"></i> Specie</a>
-        <a href="#" class="w3-center w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-theme-d1" title="Check users"><i class="fa fa-users"></i> Users</a>
+        <a href="adminTools.php" class="w3-center w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Check users"><i class="fa fa-users"></i> Users</a>
         <a href="social.php" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-right" title="Exit Admin Tools"><i class="fa fa-cube"></i> Exit</a>
     </div>
 </div>
@@ -159,7 +159,7 @@
             </div>
 
             <?php
-            loadUsers();
+            dangerExtinction();
             ?>
 
             <!--

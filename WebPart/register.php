@@ -108,7 +108,7 @@ if(isset($_SESSION['USER_ID'])) { // Recuerda usar corchetes.
 <div class="login">
     <h1>Register</h1>
     <form action="php/registered.php" method="post">
-        <input type="text" name="name" maxlength="6" placeholder="Name" required="required"><br>
+        <input type="text" name="name" placeholder="Name" required="required"><br>
         <input type="text" name="lastname" placeholder="Last Name" required="required"><br>
         <input type="text" name="nick" placeholder="Nick" required="required"><br>
         <input type="text" name="profession" placeholder="Profession" required="required"><br>

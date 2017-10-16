@@ -316,7 +316,7 @@
 
     while ($row = oci_fetch_array($query, OCI_ASSOC+OCI_RETURN_NULLS)) {
         echo ("
-                case ".$row['CLASS_ID'].":
+                case ".$row['ORDER_ID'].":
                 addOpt(oCntrl,  0, \"Filtrar por suborden\", \"0\");
         ");
 
@@ -522,5 +522,148 @@
             $position++;
         }
         endConnection($conn);
+    }
+
+    function loadUsers(){
+        $conn = startConnection();
+        $query = oci_parse($conn, 'SELECT * FROM SYSTEM_USER');
+        oci_execute($query);
+
+        while ($row = oci_fetch_array($query, OCI_ASSOC+OCI_RETURN_NULLS)) {
+            echo ("
+            <div id=\"".$row['USER_ID']."\" class=\"w3-container w3-card-2 w3-white w3-round w3-margin w3-row-padding\"><br>
+                <img src=\"img/iconbh.png\" alt=\"Avatar\" class=\"w3-left w3-circle w3-margin-right\" style=\"width:60px\">
+                <span class=\"w3-right w3-opacity\">".$row['DATE_CREATION']."</span>
+                <h5>".$row['USER_FIRSTNAME'].' '.$row['USER_LASTNAME']." (".$row['USER_NICKNAME'].") ".$row['USER_EMAIL']."
+                </h5><br>
+            </div>");
+        }
+        endConnection($conn);
+    }
+
+    function dangerExtinction(){
+        $conn = startConnection();
+        $query = oci_parse($conn, 'SELECT ANML_SPECIE.DANGER_OF_EXTINCTION,ANML_SPECIE.SPECIE_NAME, SIGHT.SIGHT_ID,SIGHT.DATE_CREATION, SIGHT.IMAGE_URL, SYSTEM_USER.USER_NICKNAME, SYSTEM_USER.USER_EMAIL, DISTRICT.DISTRICT_NAME, CANTON.CANTON_NAME, PROVINCE.PROVINCE_NAME, COUNTRY.COUNTRY_NAME
+    FROM SIGHT INNER JOIN SYSTEM_USER
+    ON SYSTEM_USER.USER_ID = SIGHT.USER_ID
+    INNER JOIN ANML_SPECIE
+    ON SIGHT.SPECIE_ID = ANML_SPECIE.SPECIE_ID
+    INNER JOIN DISTRICT
+    ON DISTRICT.DISTRICT_ID = SIGHT.DISTRICT_ID
+    INNER JOIN CANTON
+    ON DISTRICT.CANTON_ID = CANTON.CANTON_ID
+    INNER JOIN PROVINCE
+    ON CANTON.PROVINCE_ID = PROVINCE.PROVINCE_ID
+    INNER JOIN COUNTRY
+    ON PROVINCE.COUNTRY_ID = COUNTRY.COUNTRY_ID
+    ORDER BY SIGHT.SIGHT_ID DESC');
+        oci_execute($query);
+        while ($row = oci_fetch_array($query, OCI_ASSOC+OCI_RETURN_NULLS)) {
+            if($row['DANGER_OF_EXTINCTION']!=0) {
+                echo("
+                <div id=\"" . $row['SIGHT_ID'] . "\" class=\"w3-container w3-card-2 w3-white w3-round w3-margin w3-row-padding\"><br>
+                    <img src=\"img/iconbh.png\" alt=\"Avatar\" class=\"w3-left w3-circle w3-margin-right\" style=\"width:60px\">
+                    <span class=\"w3-right w3-opacity\">" . $row['DATE_CREATION'] . "</span>
+                    <h5>" . $row['USER_NICKNAME'] ." ".$row['USER_EMAIL']."</h5><br>
+                    <hr class=\"w3-clear\">
+                    <p><i class=\"fa fa-camera fa-fw w3-margin-right w3-text-theme\"></i>" . $row['SPECIE_NAME'] . "</p>
+                    <p><i class=\"fa fa-location-arrow fa-fw w3-margin-right w3-text-theme\"></i> " . $row['COUNTRY_NAME'] . ",
+                     " . $row['PROVINCE_NAME'] . ", " . $row['CANTON_NAME'] . ", " . $row['DISTRICT_NAME'] . ".</p>
+                    <div class=\"w3-row-padding\" style=\"margin:0 -16px\">
+                        <div class=\"w3-image\">
+                            <img src=\"" . $row['IMAGE_URL'] . "\" style=\"width:100%\" alt=\"Northern Lights\" 
+                            class=\"w3-margin-bottom\">
+                        </div>
+                    </div>
+                </div>
+                ");
+            }
+        }
+        endConnection($conn);
+    }
+
+
+    function createClass(){
+        $conn = startConnection();
+
+        $query = oci_parse($conn, 'INSERT INTO ANML_CLASS(CLASS_ID, CLASS_NAME) VALUES(SEQ_CLASS.NEXTVAL, :cname)');
+        OCIBindByName($query,":cname",$_POST['name']);
+        oci_execute($query);
+
+        commit($conn);
+        endConnection($conn);
+        header('Location: \DBP1/adminTools_addClass.php');
+    }
+
+    function createOrder(){
+        $conn = startConnection();
+
+        $query = oci_parse($conn, 'INSERT INTO ANML_ORDER(ORDER_ID, ORDER_NAME, CLASS_ID) VALUES(SEQ_ORDER.NEXTVAL, :cname, :cid)');
+        OCIBindByName($query,":cname",$_POST['name']);
+        OCIBindByName($query,":cid",$_POST['motherid']);
+        oci_execute($query);
+
+        commit($conn);
+        endConnection($conn);
+        header('Location: \DBP1/adminTools_addOrder.php');
+    }
+
+    function createSuborder(){
+        $conn = startConnection();
+
+        $query = oci_parse($conn, 'INSERT INTO ANML_SUBORDER(SUBORDER_ID, SUBORDER_NAME, ORDER_ID) VALUES(SEQ_SUBORDER.NEXTVAL, :cname, :cid)');
+        OCIBindByName($query,":cname",$_POST['name']);
+        OCIBindByName($query,":cid",$_POST['motherid']);
+        oci_execute($query);
+
+        commit($conn);
+        endConnection($conn);
+        header('Location: \DBP1/adminTools_addSuborder.php');
+    }
+
+    function createFamily(){
+        $conn = startConnection();
+
+        $query = oci_parse($conn, 'INSERT INTO ANML_FAMILY(FAMILY_ID, FAMILY_NAME, SUBORDER_ID) VALUES(SEQ_FAMILY.NEXTVAL, :cname, :cid)');
+        OCIBindByName($query,":cname",$_POST['name']);
+        OCIBindByName($query,":cid",$_POST['motherid']);
+        oci_execute($query);
+
+        commit($conn);
+        endConnection($conn);
+        header('Location: \DBP1/adminTools_addFamily.php');
+    }
+
+    function createGender(){
+        $conn = startConnection();
+
+        $query = oci_parse($conn, 'INSERT INTO ANML_GENDER(GENDER_ID, GENDER_NAME, FAMILY_ID) VALUES(SEQ_GENDER.NEXTVAL, :cname, :cid)');
+        OCIBindByName($query,":cname",$_POST['name']);
+        OCIBindByName($query,":cid",$_POST['motherid']);
+        oci_execute($query);
+
+        commit($conn);
+        endConnection($conn);
+        header('Location: \DBP1/adminTools_addGender.php');
+    }
+
+    function createSpecie(){
+        $conn = startConnection();
+
+        $query = oci_parse($conn, 'INSERT INTO ANML_SPECIE(SPECIE_ID, SCIENTIFIC_NAME, SPECIE_NAME,SPANISH_NAME,ENGLISH_NAME, SPECIE_SIZE, SPECIE_COLOR, DANGER_OF_EXTINCTION, GENDER_ID)
+          VALUES(SEQ_SPECIE.NEXTVAL, :scname, :sname, :spname, :enname, :tam, :color, :extdanger, :gender)');
+        OCIBindByName($query,":scname",$_POST['scientific']);
+        OCIBindByName($query,":sname",$_POST['specie']);
+        OCIBindByName($query,":spname",$_POST['spanish']);
+        OCIBindByName($query,":enname",$_POST['english']);
+        OCIBindByName($query,":tam",$_POST['size']);
+        OCIBindByName($query,":color",$_POST['color']);
+        OCIBindByName($query,":extdanger",$_POST['danger']);
+        OCIBindByName($query,":gender",$_POST['gender']);
+        oci_execute($query);
+
+        commit($conn);
+        endConnection($conn);
+        header('Location: \DBP1/adminTools_addSpecie.php');
     }
 ?>

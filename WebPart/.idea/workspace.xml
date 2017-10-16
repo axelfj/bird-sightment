@@ -14,12 +14,13 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
+            <state relative-caret-position="224">
               <caret line="187" column="6" lean-forward="true" selection-start-line="187" selection-start-column="6" selection-end-line="187" selection-end-column="6" />
               <folding>
                 <element signature="n#startConnection#0;n#!!top" expanded="false" />
                 <element signature="n#endConnection#0;n#!!top" expanded="false" />
                 <element signature="n#commit#0;n#!!top" expanded="false" />
+                <element signature="n#registerUser#0;n#!!top" expanded="false" />
                 <element signature="n#login#0;n#!!top" expanded="false" />
                 <element signature="n#addSight#0;n#!!top" expanded="false" />
                 <element signature="n#socialWall#0;n#!!top" expanded="false" />
@@ -36,51 +37,69 @@
                 <element signature="n#addSize#0;n#!!top" expanded="false" />
                 <element signature="n#changePass#0;n#!!top" expanded="false" />
                 <element signature="n#loadTop#0;n#!!top" expanded="false" />
-                <marker date="1508131630793" expanded="true" signature="1707:1755" ph="SELECT * FRO... SYSTEM_USER" />
-                <marker date="1508131630793" expanded="true" signature="2519:2563" ph="SELECT * FRO... ADMIN_USER" />
-                <marker date="1508131630793" expanded="true" signature="3466:3504" ph="SELECT SEQ_S... DUAL" />
-                <marker date="1508131630793" expanded="true" signature="4142:4341" ph="INSERT INTO SIGHT... " />
-                <marker date="1508131630793" expanded="false" signature="5008:5646" ph="SELECT SEQ_S... DUAL" />
-                <marker date="1508131630793" expanded="false" signature="5008:5679" ph="SELECT ANML_... SIGHT" />
-                <marker date="1508131630793" expanded="true" signature="7717:7739" ph="SELECT * FRO... PROVINCE" />
-                <marker date="1508131630793" expanded="true" signature="8133:8155" ph="SELECT * FRO... PROVINCE" />
-                <marker date="1508131630793" expanded="true" signature="8436:8482" ph="SELECT * FRO... CANTON" />
-                <marker date="1508131630793" expanded="true" signature="9083:9103" ph="SELECT * FRO... CANTON" />
-                <marker date="1508131630793" expanded="true" signature="9405:9451" ph="SELECT * FRO... DISTRICT" />
-                <marker date="1508131630793" expanded="true" signature="10088:10102" ph="SELECT * FRO... PROVINCE" />
-                <marker date="1508131630793" expanded="true" signature="10088:10112" ph="SELECT * FRO... ANML_CLASS" />
-                <marker date="1508131630793" expanded="true" signature="10475:10489" ph="SELECT * FRO... PROVINCE" />
-                <marker date="1508131630793" expanded="true" signature="10475:10494" ph="SELECT * FRO... ANML_" />
-                <marker date="1508131630793" expanded="true" signature="10475:10499" ph="SELECT * FRO... ANML_CLASS" />
-                <marker date="1508131630793" expanded="true" signature="10776:10823" ph="SELECT * FRO... CANTON" />
-                <marker date="1508131630793" expanded="true" signature="11407:11426" ph="SELECT * FRO... ANML_CLASS" />
-                <marker date="1508131630793" expanded="true" signature="11407:11431" ph="SELECT * FRO... ANML_ORDER" />
-                <marker date="1508131630793" expanded="true" signature="11711:11761" ph="SELECT * FRO... ANML_ORDER" />
-                <marker date="1508131630793" expanded="true" signature="12349:12368" ph="SELECT * FRO... ANML_CLASS" />
-                <marker date="1508131630793" expanded="true" signature="12349:12376" ph="SELECT * FRO... ANML_SUBORDER" />
-                <marker date="1508131630793" expanded="true" signature="12658:12709" ph="SELECT * FRO... ANML_ORDER" />
-                <marker date="1508131630793" expanded="true" signature="13296:13315" ph="SELECT * FRO... ANML_CLASS" />
-                <marker date="1508131630793" expanded="true" signature="13296:13321" ph="SELECT * FRO... ANML_FAMILY" />
-                <marker date="1508131630793" expanded="true" signature="13600:13649" ph="SELECT * FRO... ANML_ORDER" />
-                <marker date="1508131630793" expanded="true" signature="14234:14253" ph="SELECT * FRO... ANML_CLASS" />
-                <marker date="1508131630793" expanded="true" signature="14234:14259" ph="SELECT * FRO... ANML_GENDER" />
-                <marker date="1508131630793" expanded="true" signature="14539:14588" ph="SELECT * FRO... ANML_SPECIE" />
-                <marker date="1508131630793" expanded="true" signature="15162:15314" ph="SELECT ANML_... SIGHT" />
-                <marker date="1508131630793" expanded="true" signature="15162:15392" ph="SELECT ANML_... SIGHT" />
-                <marker date="1508131630793" expanded="true" signature="15780:16008" ph="SELECT ANML_... SIGHT" />
-                <marker date="1508131630793" expanded="true" signature="16406:16480" ph="SELECT SYSTE... SYSTEM_USER" />
-                <marker date="1508131630793" expanded="true" signature="16850:16922" ph="UPDATE SYSTE... " />
-                <marker date="1508131630793" expanded="true" signature="17141:17321" ph="INSERT INTO BINNACLE... " />
-                <marker date="1508131630793" expanded="false" signature="17876:18273" ph="select * FRO... USER_ID" />
-                <marker date="1508131630793" expanded="true" signature="17982:18204" ph="SELECT USER_... SIGHT" />
-                <marker date="1508131630793" expanded="true" signature="18446:18491" ph="SELECT * FRO... SYSTEM_USER" />
-                <marker date="1508131630793" expanded="true" signature="18454:18491" ph="select USER_... SYSTEM_USER" />
-                <marker date="1508131630793" expanded="true" signature="18798:19281" ph="..." />
-                <marker date="1508131630793" expanded="true" signature="18822:19258" ph="..." />
-                <marker date="1508131630793" expanded="true" signature="18867:18881" ph="..." />
-                <marker date="1508131630793" expanded="true" signature="18883:19011" ph="..." />
-                <marker date="1508131630793" expanded="true" signature="19069:19083" ph="..." />
-                <marker date="1508131630793" expanded="true" signature="19213:19227" ph="..." />
+                <element signature="n#loadUsers#0;n#!!top" expanded="false" />
+                <element signature="n#dangerExtinction#0;n#!!top" expanded="false" />
+                <element signature="n#createClass#0;n#!!top" expanded="false" />
+                <element signature="n#createOrder#0;n#!!top" expanded="false" />
+                <element signature="n#createSuborder#0;n#!!top" expanded="false" />
+                <element signature="n#createFamily#0;n#!!top" expanded="false" />
+                <element signature="n#createGender#0;n#!!top" expanded="false" />
+                <element signature="n#createSpecie#0;n#!!top" expanded="false" />
+                <marker date="1508183358947" expanded="true" signature="1707:1755" ph="SELECT * FRO... SYSTEM_USER" />
+                <marker date="1508183358947" expanded="true" signature="2519:2563" ph="SELECT * FRO... ADMIN_USER" />
+                <marker date="1508183358947" expanded="true" signature="3466:3504" ph="SELECT SEQ_S... DUAL" />
+                <marker date="1508183358947" expanded="true" signature="4142:4341" ph="INSERT INTO SIGHT... " />
+                <marker date="1508183358947" expanded="true" signature="5008:5646" ph="SELECT SEQ_S... DUAL" />
+                <marker date="1508183358947" expanded="true" signature="5008:5679" ph="SELECT ANML_... SIGHT" />
+                <marker date="1508183358947" expanded="true" signature="7717:7739" ph="SELECT * FRO... PROVINCE" />
+                <marker date="1508183358947" expanded="true" signature="8133:8155" ph="SELECT * FRO... PROVINCE" />
+                <marker date="1508183358947" expanded="true" signature="8436:8482" ph="SELECT * FRO... CANTON" />
+                <marker date="1508183358947" expanded="true" signature="9083:9103" ph="SELECT * FRO... CANTON" />
+                <marker date="1508183358947" expanded="true" signature="9405:9451" ph="SELECT * FRO... DISTRICT" />
+                <marker date="1508183358947" expanded="true" signature="10088:10102" ph="SELECT * FRO... PROVINCE" />
+                <marker date="1508183358947" expanded="true" signature="10088:10112" ph="SELECT * FRO... ANML_CLASS" />
+                <marker date="1508183358947" expanded="true" signature="10475:10489" ph="SELECT * FRO... PROVINCE" />
+                <marker date="1508183358947" expanded="true" signature="10475:10494" ph="SELECT * FRO... ANML_" />
+                <marker date="1508183358947" expanded="true" signature="10475:10499" ph="SELECT * FRO... ANML_CLASS" />
+                <marker date="1508183358947" expanded="true" signature="10776:10823" ph="SELECT * FRO... CANTON" />
+                <marker date="1508183358947" expanded="true" signature="11407:11426" ph="SELECT * FRO... ANML_CLASS" />
+                <marker date="1508183358947" expanded="true" signature="11407:11431" ph="SELECT * FRO... ANML_ORDER" />
+                <marker date="1508183358947" expanded="true" signature="11711:11761" ph="SELECT * FRO... ANML_ORDER" />
+                <marker date="1508183358947" expanded="true" signature="12349:12368" ph="SELECT * FRO... ANML_CLASS" />
+                <marker date="1508183358947" expanded="true" signature="12349:12376" ph="SELECT * FRO... ANML_SUBORDER" />
+                <marker date="1508183358947" expanded="true" signature="12658:12709" ph="SELECT * FRO... ANML_ORDER" />
+                <marker date="1508183358947" expanded="true" signature="13296:13315" ph="SELECT * FRO... ANML_CLASS" />
+                <marker date="1508183358947" expanded="true" signature="13296:13321" ph="SELECT * FRO... ANML_FAMILY" />
+                <marker date="1508183358947" expanded="true" signature="13600:13649" ph="SELECT * FRO... ANML_ORDER" />
+                <marker date="1508183358947" expanded="true" signature="14234:14253" ph="SELECT * FRO... ANML_CLASS" />
+                <marker date="1508183358947" expanded="true" signature="14234:14259" ph="SELECT * FRO... ANML_GENDER" />
+                <marker date="1508183358947" expanded="true" signature="14539:14588" ph="SELECT * FRO... ANML_SPECIE" />
+                <marker date="1508183358947" expanded="true" signature="15162:15314" ph="SELECT ANML_... SIGHT" />
+                <marker date="1508183358947" expanded="true" signature="15162:15392" ph="SELECT ANML_... SIGHT" />
+                <marker date="1508183358947" expanded="true" signature="15780:16008" ph="SELECT ANML_... SIGHT" />
+                <marker date="1508183358947" expanded="true" signature="16406:16480" ph="SELECT SYSTE... SYSTEM_USER" />
+                <marker date="1508183358947" expanded="true" signature="16850:16922" ph="UPDATE SYSTE... " />
+                <marker date="1508183358947" expanded="true" signature="17141:17321" ph="INSERT INTO BINNACLE... " />
+                <marker date="1508183358947" expanded="false" signature="17876:18273" ph="select * FRO... USER_ID" />
+                <marker date="1508183358947" expanded="true" signature="17982:18204" ph="SELECT USER_... SIGHT" />
+                <marker date="1508183358947" expanded="true" signature="18446:18491" ph="SELECT * FRO... SYSTEM_USER" />
+                <marker date="1508183358947" expanded="true" signature="18454:18491" ph="select USER_... SYSTEM_USER" />
+                <marker date="1508183358947" expanded="true" signature="18798:19281" ph="..." />
+                <marker date="1508183358947" expanded="true" signature="18822:19258" ph="..." />
+                <marker date="1508183358947" expanded="true" signature="18867:18881" ph="..." />
+                <marker date="1508183358947" expanded="true" signature="18883:19011" ph="..." />
+                <marker date="1508183358947" expanded="true" signature="19069:19083" ph="..." />
+                <marker date="1508183358947" expanded="true" signature="19213:19227" ph="..." />
+                <marker date="1508183358947" expanded="true" signature="19467:19474" ph="SELECT ANML_... SIGHT" />
+                <marker date="1508183358947" expanded="true" signature="19467:19492" ph="SELECT * FRO... SYSTEM_USER" />
+                <marker date="1508183358947" expanded="true" signature="20280:21008" ph="SELECT ANML_... SIGHT" />
+                <marker date="1508183358947" expanded="true" signature="22597:22641" ph="INSERT INTO ANML_CLASS... " />
+                <marker date="1508183358947" expanded="true" signature="22597:22675" ph="INSERT INTO ANML_CLASS... " />
+                <marker date="1508183358947" expanded="true" signature="22982:23076" ph="INSERT INTO ANML_ORDER... " />
+                <marker date="1508183358947" expanded="true" signature="23443:23549" ph="INSERT INTO ANML_SUBORDER... " />
+                <marker date="1508183358947" expanded="true" signature="23917:24018" ph="INSERT INTO ANML_FAMILY... " />
+                <marker date="1508183358947" expanded="true" signature="24384:24483" ph="INSERT INTO ANML_GENDER... " />
+                <marker date="1508183358947" expanded="true" signature="24849:25106" ph="INSERT INTO ANML_SPECIE... " />
               </folding>
             </state>
           </provider>
@@ -89,46 +108,31 @@
       <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="48">
+              <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addSight.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addSight.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="54" column="19" lean-forward="false" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+            <state relative-caret-position="110">
+              <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="42" />
               <folding>
-                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#7306#7368#0#HTML" expanded="false" />
-                <element signature="e#7416#7543#0#HTML" expanded="false" />
-                <element signature="e#7655#7885#0#HTML" expanded="false" />
-                <element signature="e#7963#8097#0#HTML" expanded="false" />
-                <element signature="e#8381#8480#0#HTML" expanded="false" />
-                <element signature="e#8519#8838#0#HTML" expanded="false" />
-                <element signature="e#8879#9195#0#HTML" expanded="false" />
-                <element signature="e#9227#9479#0#HTML" expanded="false" />
-                <element signature="e#9517#9826#0#HTML" expanded="false" />
-                <element signature="e#9867#10190#0#HTML" expanded="false" />
-                <element signature="e#10230#10553#0#HTML" expanded="false" />
-                <element signature="e#10592#10913#0#HTML" expanded="false" />
-                <element signature="e#10953#11275#0#HTML" expanded="false" />
-                <element signature="n#script#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#select#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#13427#13432#0#PHP" expanded="false" />
-                <element signature="n#select#1;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#select#2;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#select#3;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#select#4;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#select#5;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#select#6;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#select#7;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#select#8;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1508118529692" expanded="true" signature="13008:13087" ph="..." />
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="39" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -136,42 +140,8 @@
       <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-              <folding>
-                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="registered.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/registered.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wrongPass.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/wrongPass.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1776">
-              <caret line="118" column="10" lean-forward="false" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
-              <folding>
-                <marker date="1508094934262" expanded="true" signature="8279:8358" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sight.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/sight.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="41" lean-forward="true" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+            <state relative-caret-position="377">
+              <caret line="118" column="11" lean-forward="true" selection-start-line="118" selection-start-column="11" selection-end-line="118" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -212,6 +182,8 @@
       <find>cambiaCanton</find>
       <find>addCanton</find>
       <find>id</find>
+      <find>body</find>
+      <find>bod</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -220,15 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/Conection/form.html" />
-        <option value="$PROJECT_DIR$/Conection/form.php" />
-        <option value="$PROJECT_DIR$/Conection/formRegister.html" />
-        <option value="$PROJECT_DIR$/Conection/data.php" />
-        <option value="$PROJECT_DIR$/../p_user/data.php" />
-        <option value="$PROJECT_DIR$/../project1DB/data.php" />
-        <option value="$PROJECT_DIR$/js/registerScreen.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/registerScreen.html" />
         <option value="$PROJECT_DIR$/../project1DB/register.html" />
         <option value="$PROJECT_DIR$/../project1DB/logindb.php" />
@@ -262,13 +225,22 @@
         <option value="$PROJECT_DIR$/php/successful.php" />
         <option value="$PROJECT_DIR$/php/wrongPass.php" />
         <option value="$PROJECT_DIR$/settings.php" />
-        <option value="$PROJECT_DIR$/adminTools.php" />
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/sightsMap.php" />
         <option value="$PROJECT_DIR$/social.php" />
         <option value="$PROJECT_DIR$/temp.php" />
         <option value="$PROJECT_DIR$/addSight.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/adminTools.php" />
+        <option value="$PROJECT_DIR$/adminTools_stats.php" />
+        <option value="$PROJECT_DIR$/php/addClass.php" />
+        <option value="$PROJECT_DIR$/php/addAnml.php" />
+        <option value="$PROJECT_DIR$/adminTools_addSuborder.php" />
+        <option value="$PROJECT_DIR$/adminTools_addSpecie.php" />
+        <option value="$PROJECT_DIR$/adminTools_addOrder.php" />
+        <option value="$PROJECT_DIR$/adminTools_addGender.php" />
+        <option value="$PROJECT_DIR$/adminTools_addFamily.php" />
+        <option value="$PROJECT_DIR$/adminTools_addClass.php" />
         <option value="$PROJECT_DIR$/register.php" />
         <option value="$PROJECT_DIR$/php/functions.php" />
       </list>
@@ -306,7 +278,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -314,10 +285,16 @@
               <item name="DBP1" type="b2602c69:ProjectViewProjectNode" />
               <item name="DBP1" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="DBP1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DBP1" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="php" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -378,17 +355,19 @@
       <workItem from="1507694232758" duration="5768000" />
       <workItem from="1507729992420" duration="71764000" />
       <workItem from="1508009512285" duration="5632000" />
-      <workItem from="1508083618962" duration="37988000" />
+      <workItem from="1508083618962" duration="38573000" />
+      <workItem from="1508145175104" duration="22172000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="333412000" />
+    <option name="totallyTimeSpent" value="356169000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19472913" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19472913" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -425,7 +404,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39936608" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,42 +415,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <option name="time" value="16" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/img/type4/3.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/type4/5.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/type4/4.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/bg.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3315">
-          <caret line="195" column="1" lean-forward="false" selection-start-line="195" selection-start-column="1" selection-end-line="195" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loginform.php" />
-    <entry file="file://$PROJECT_DIR$/js/register.php" />
-    <entry file="file://$PROJECT_DIR$/conectionEx.php" />
-    <entry file="file://$PROJECT_DIR$/Controller/functions.php" />
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
@@ -594,7 +542,6 @@
         <state relative-caret-position="416">
           <caret line="118" column="10" lean-forward="false" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <marker date="1508094933830" expanded="true" signature="8279:8358" ph="..." />
           </folding>
         </state>
@@ -608,36 +555,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/social.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="139" column="76" lean-forward="false" selection-start-line="139" selection-start-column="76" selection-end-line="139" selection-end-column="76" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#p#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1508108879874" expanded="true" signature="1938:2002" ph="..." />
-            <marker date="1508108879874" expanded="true" signature="1938:2017" ph="..." />
-            <marker date="1508108879874" expanded="false" signature="4952:4962" ph="..." />
-            <marker date="1508108879874" expanded="false" signature="5287:5301" ph="..." />
-            <marker date="1508108879874" expanded="false" signature="5443:5453" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
           <caret line="136" column="7" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="136" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/adminTools.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding>
-            <marker date="1508098711664" expanded="true" signature="8237:8316" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -671,11 +593,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp.php">
+    <entry file="file://$PROJECT_DIR$/temp.php" />
+    <entry file="file://$PROJECT_DIR$/php/registered.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="368" column="34" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="378" selection-end-column="7" />
+        <state relative-caret-position="320">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/wrongPass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="118" column="10" lean-forward="false" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
+          <folding>
+            <marker date="1508094934262" expanded="true" signature="8279:8358" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -687,101 +620,179 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/wrongPass.php">
+    <entry file="file://$PROJECT_DIR$/social.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1776">
-          <caret line="118" column="10" lean-forward="false" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
+        <state relative-caret-position="154">
+          <caret line="145" column="14" lean-forward="true" selection-start-line="145" selection-start-column="14" selection-end-line="145" selection-end-column="14" />
           <folding>
-            <marker date="1508094934262" expanded="true" signature="8279:8358" ph="..." />
+            <marker date="1508108879874" expanded="true" signature="1938:2002" ph="..." />
+            <marker date="1508108879874" expanded="true" signature="1938:2017" ph="..." />
+            <marker date="1508108879874" expanded="false" signature="4952:4962" ph="..." />
+            <marker date="1508108879874" expanded="false" signature="5287:5301" ph="..." />
+            <marker date="1508108879874" expanded="false" signature="5443:5453" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/registered.php">
+    <entry file="file://$PROJECT_DIR$/adminTools_stats.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        <state relative-caret-position="225">
+          <caret line="110" column="106" lean-forward="false" selection-start-line="110" selection-start-column="106" selection-end-line="110" selection-end-column="106" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminTools.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="117" column="105" lean-forward="true" selection-start-line="117" selection-start-column="105" selection-end-line="117" selection-end-column="116" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/addClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/login.php">
+    <entry file="file://$PROJECT_DIR$/php/addAnml.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="368">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addSight.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="54" column="19" lean-forward="false" selection-start-line="54" selection-start-column="19" selection-end-line="54" selection-end-column="19" />
+        <state relative-caret-position="295">
+          <caret line="366" column="69" lean-forward="false" selection-start-line="366" selection-start-column="49" selection-end-line="366" selection-end-column="69" />
           <folding>
-            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#7306#7368#0#HTML" expanded="false" />
-            <element signature="e#7416#7543#0#HTML" expanded="false" />
-            <element signature="e#7655#7885#0#HTML" expanded="false" />
-            <element signature="e#7963#8097#0#HTML" expanded="false" />
-            <element signature="e#8381#8480#0#HTML" expanded="false" />
-            <element signature="e#8519#8838#0#HTML" expanded="false" />
-            <element signature="e#8879#9195#0#HTML" expanded="false" />
-            <element signature="e#9227#9479#0#HTML" expanded="false" />
-            <element signature="e#9517#9826#0#HTML" expanded="false" />
-            <element signature="e#9867#10190#0#HTML" expanded="false" />
-            <element signature="e#10230#10553#0#HTML" expanded="false" />
-            <element signature="e#10592#10913#0#HTML" expanded="false" />
-            <element signature="e#10953#11275#0#HTML" expanded="false" />
-            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#select#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#13427#13432#0#PHP" expanded="false" />
-            <element signature="n#select#1;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#select#2;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#select#3;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#select#4;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#select#5;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#select#6;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#select#7;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#select#8;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <marker date="1508118529692" expanded="true" signature="13008:13087" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminTools_addSuborder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="115" column="63" lean-forward="false" selection-start-line="115" selection-start-column="63" selection-end-line="115" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#2;n#form#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminTools_addSpecie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="115" column="63" lean-forward="false" selection-start-line="115" selection-start-column="63" selection-end-line="115" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#5;n#form#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminTools_addOrder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="115" column="63" lean-forward="false" selection-start-line="115" selection-start-column="63" selection-end-line="115" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#1;n#form#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminTools_addGender.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="115" column="63" lean-forward="false" selection-start-line="115" selection-start-column="63" selection-end-line="115" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#4;n#form#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminTools_addFamily.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="115" column="63" lean-forward="false" selection-start-line="115" selection-start-column="63" selection-end-line="115" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#3;n#form#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminTools_addClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="115" column="63" lean-forward="false" selection-start-line="115" selection-start-column="63" selection-end-line="115" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#form#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding>
-            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="377">
+          <caret line="118" column="11" lean-forward="true" selection-start-line="118" selection-start-column="11" selection-end-line="118" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="6" lean-forward="true" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        <state relative-caret-position="48">
+          <caret line="3" column="39" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        <state relative-caret-position="110">
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="45" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
+        <state relative-caret-position="224">
           <caret line="187" column="6" lean-forward="true" selection-start-line="187" selection-start-column="6" selection-end-line="187" selection-end-column="6" />
           <folding>
             <element signature="n#startConnection#0;n#!!top" expanded="false" />
             <element signature="n#endConnection#0;n#!!top" expanded="false" />
             <element signature="n#commit#0;n#!!top" expanded="false" />
+            <element signature="n#registerUser#0;n#!!top" expanded="false" />
             <element signature="n#login#0;n#!!top" expanded="false" />
             <element signature="n#addSight#0;n#!!top" expanded="false" />
             <element signature="n#socialWall#0;n#!!top" expanded="false" />
@@ -798,51 +809,69 @@
             <element signature="n#addSize#0;n#!!top" expanded="false" />
             <element signature="n#changePass#0;n#!!top" expanded="false" />
             <element signature="n#loadTop#0;n#!!top" expanded="false" />
-            <marker date="1508131630793" expanded="true" signature="1707:1755" ph="SELECT * FRO... SYSTEM_USER" />
-            <marker date="1508131630793" expanded="true" signature="2519:2563" ph="SELECT * FRO... ADMIN_USER" />
-            <marker date="1508131630793" expanded="true" signature="3466:3504" ph="SELECT SEQ_S... DUAL" />
-            <marker date="1508131630793" expanded="true" signature="4142:4341" ph="INSERT INTO SIGHT... " />
-            <marker date="1508131630793" expanded="false" signature="5008:5646" ph="SELECT SEQ_S... DUAL" />
-            <marker date="1508131630793" expanded="false" signature="5008:5679" ph="SELECT ANML_... SIGHT" />
-            <marker date="1508131630793" expanded="true" signature="7717:7739" ph="SELECT * FRO... PROVINCE" />
-            <marker date="1508131630793" expanded="true" signature="8133:8155" ph="SELECT * FRO... PROVINCE" />
-            <marker date="1508131630793" expanded="true" signature="8436:8482" ph="SELECT * FRO... CANTON" />
-            <marker date="1508131630793" expanded="true" signature="9083:9103" ph="SELECT * FRO... CANTON" />
-            <marker date="1508131630793" expanded="true" signature="9405:9451" ph="SELECT * FRO... DISTRICT" />
-            <marker date="1508131630793" expanded="true" signature="10088:10102" ph="SELECT * FRO... PROVINCE" />
-            <marker date="1508131630793" expanded="true" signature="10088:10112" ph="SELECT * FRO... ANML_CLASS" />
-            <marker date="1508131630793" expanded="true" signature="10475:10489" ph="SELECT * FRO... PROVINCE" />
-            <marker date="1508131630793" expanded="true" signature="10475:10494" ph="SELECT * FRO... ANML_" />
-            <marker date="1508131630793" expanded="true" signature="10475:10499" ph="SELECT * FRO... ANML_CLASS" />
-            <marker date="1508131630793" expanded="true" signature="10776:10823" ph="SELECT * FRO... CANTON" />
-            <marker date="1508131630793" expanded="true" signature="11407:11426" ph="SELECT * FRO... ANML_CLASS" />
-            <marker date="1508131630793" expanded="true" signature="11407:11431" ph="SELECT * FRO... ANML_ORDER" />
-            <marker date="1508131630793" expanded="true" signature="11711:11761" ph="SELECT * FRO... ANML_ORDER" />
-            <marker date="1508131630793" expanded="true" signature="12349:12368" ph="SELECT * FRO... ANML_CLASS" />
-            <marker date="1508131630793" expanded="true" signature="12349:12376" ph="SELECT * FRO... ANML_SUBORDER" />
-            <marker date="1508131630793" expanded="true" signature="12658:12709" ph="SELECT * FRO... ANML_ORDER" />
-            <marker date="1508131630793" expanded="true" signature="13296:13315" ph="SELECT * FRO... ANML_CLASS" />
-            <marker date="1508131630793" expanded="true" signature="13296:13321" ph="SELECT * FRO... ANML_FAMILY" />
-            <marker date="1508131630793" expanded="true" signature="13600:13649" ph="SELECT * FRO... ANML_ORDER" />
-            <marker date="1508131630793" expanded="true" signature="14234:14253" ph="SELECT * FRO... ANML_CLASS" />
-            <marker date="1508131630793" expanded="true" signature="14234:14259" ph="SELECT * FRO... ANML_GENDER" />
-            <marker date="1508131630793" expanded="true" signature="14539:14588" ph="SELECT * FRO... ANML_SPECIE" />
-            <marker date="1508131630793" expanded="true" signature="15162:15314" ph="SELECT ANML_... SIGHT" />
-            <marker date="1508131630793" expanded="true" signature="15162:15392" ph="SELECT ANML_... SIGHT" />
-            <marker date="1508131630793" expanded="true" signature="15780:16008" ph="SELECT ANML_... SIGHT" />
-            <marker date="1508131630793" expanded="true" signature="16406:16480" ph="SELECT SYSTE... SYSTEM_USER" />
-            <marker date="1508131630793" expanded="true" signature="16850:16922" ph="UPDATE SYSTE... " />
-            <marker date="1508131630793" expanded="true" signature="17141:17321" ph="INSERT INTO BINNACLE... " />
-            <marker date="1508131630793" expanded="false" signature="17876:18273" ph="select * FRO... USER_ID" />
-            <marker date="1508131630793" expanded="true" signature="17982:18204" ph="SELECT USER_... SIGHT" />
-            <marker date="1508131630793" expanded="true" signature="18446:18491" ph="SELECT * FRO... SYSTEM_USER" />
-            <marker date="1508131630793" expanded="true" signature="18454:18491" ph="select USER_... SYSTEM_USER" />
-            <marker date="1508131630793" expanded="true" signature="18798:19281" ph="..." />
-            <marker date="1508131630793" expanded="true" signature="18822:19258" ph="..." />
-            <marker date="1508131630793" expanded="true" signature="18867:18881" ph="..." />
-            <marker date="1508131630793" expanded="true" signature="18883:19011" ph="..." />
-            <marker date="1508131630793" expanded="true" signature="19069:19083" ph="..." />
-            <marker date="1508131630793" expanded="true" signature="19213:19227" ph="..." />
+            <element signature="n#loadUsers#0;n#!!top" expanded="false" />
+            <element signature="n#dangerExtinction#0;n#!!top" expanded="false" />
+            <element signature="n#createClass#0;n#!!top" expanded="false" />
+            <element signature="n#createOrder#0;n#!!top" expanded="false" />
+            <element signature="n#createSuborder#0;n#!!top" expanded="false" />
+            <element signature="n#createFamily#0;n#!!top" expanded="false" />
+            <element signature="n#createGender#0;n#!!top" expanded="false" />
+            <element signature="n#createSpecie#0;n#!!top" expanded="false" />
+            <marker date="1508183358947" expanded="true" signature="1707:1755" ph="SELECT * FRO... SYSTEM_USER" />
+            <marker date="1508183358947" expanded="true" signature="2519:2563" ph="SELECT * FRO... ADMIN_USER" />
+            <marker date="1508183358947" expanded="true" signature="3466:3504" ph="SELECT SEQ_S... DUAL" />
+            <marker date="1508183358947" expanded="true" signature="4142:4341" ph="INSERT INTO SIGHT... " />
+            <marker date="1508183358947" expanded="true" signature="5008:5646" ph="SELECT SEQ_S... DUAL" />
+            <marker date="1508183358947" expanded="true" signature="5008:5679" ph="SELECT ANML_... SIGHT" />
+            <marker date="1508183358947" expanded="true" signature="7717:7739" ph="SELECT * FRO... PROVINCE" />
+            <marker date="1508183358947" expanded="true" signature="8133:8155" ph="SELECT * FRO... PROVINCE" />
+            <marker date="1508183358947" expanded="true" signature="8436:8482" ph="SELECT * FRO... CANTON" />
+            <marker date="1508183358947" expanded="true" signature="9083:9103" ph="SELECT * FRO... CANTON" />
+            <marker date="1508183358947" expanded="true" signature="9405:9451" ph="SELECT * FRO... DISTRICT" />
+            <marker date="1508183358947" expanded="true" signature="10088:10102" ph="SELECT * FRO... PROVINCE" />
+            <marker date="1508183358947" expanded="true" signature="10088:10112" ph="SELECT * FRO... ANML_CLASS" />
+            <marker date="1508183358947" expanded="true" signature="10475:10489" ph="SELECT * FRO... PROVINCE" />
+            <marker date="1508183358947" expanded="true" signature="10475:10494" ph="SELECT * FRO... ANML_" />
+            <marker date="1508183358947" expanded="true" signature="10475:10499" ph="SELECT * FRO... ANML_CLASS" />
+            <marker date="1508183358947" expanded="true" signature="10776:10823" ph="SELECT * FRO... CANTON" />
+            <marker date="1508183358947" expanded="true" signature="11407:11426" ph="SELECT * FRO... ANML_CLASS" />
+            <marker date="1508183358947" expanded="true" signature="11407:11431" ph="SELECT * FRO... ANML_ORDER" />
+            <marker date="1508183358947" expanded="true" signature="11711:11761" ph="SELECT * FRO... ANML_ORDER" />
+            <marker date="1508183358947" expanded="true" signature="12349:12368" ph="SELECT * FRO... ANML_CLASS" />
+            <marker date="1508183358947" expanded="true" signature="12349:12376" ph="SELECT * FRO... ANML_SUBORDER" />
+            <marker date="1508183358947" expanded="true" signature="12658:12709" ph="SELECT * FRO... ANML_ORDER" />
+            <marker date="1508183358947" expanded="true" signature="13296:13315" ph="SELECT * FRO... ANML_CLASS" />
+            <marker date="1508183358947" expanded="true" signature="13296:13321" ph="SELECT * FRO... ANML_FAMILY" />
+            <marker date="1508183358947" expanded="true" signature="13600:13649" ph="SELECT * FRO... ANML_ORDER" />
+            <marker date="1508183358947" expanded="true" signature="14234:14253" ph="SELECT * FRO... ANML_CLASS" />
+            <marker date="1508183358947" expanded="true" signature="14234:14259" ph="SELECT * FRO... ANML_GENDER" />
+            <marker date="1508183358947" expanded="true" signature="14539:14588" ph="SELECT * FRO... ANML_SPECIE" />
+            <marker date="1508183358947" expanded="true" signature="15162:15314" ph="SELECT ANML_... SIGHT" />
+            <marker date="1508183358947" expanded="true" signature="15162:15392" ph="SELECT ANML_... SIGHT" />
+            <marker date="1508183358947" expanded="true" signature="15780:16008" ph="SELECT ANML_... SIGHT" />
+            <marker date="1508183358947" expanded="true" signature="16406:16480" ph="SELECT SYSTE... SYSTEM_USER" />
+            <marker date="1508183358947" expanded="true" signature="16850:16922" ph="UPDATE SYSTE... " />
+            <marker date="1508183358947" expanded="true" signature="17141:17321" ph="INSERT INTO BINNACLE... " />
+            <marker date="1508183358947" expanded="false" signature="17876:18273" ph="select * FRO... USER_ID" />
+            <marker date="1508183358947" expanded="true" signature="17982:18204" ph="SELECT USER_... SIGHT" />
+            <marker date="1508183358947" expanded="true" signature="18446:18491" ph="SELECT * FRO... SYSTEM_USER" />
+            <marker date="1508183358947" expanded="true" signature="18454:18491" ph="select USER_... SYSTEM_USER" />
+            <marker date="1508183358947" expanded="true" signature="18798:19281" ph="..." />
+            <marker date="1508183358947" expanded="true" signature="18822:19258" ph="..." />
+            <marker date="1508183358947" expanded="true" signature="18867:18881" ph="..." />
+            <marker date="1508183358947" expanded="true" signature="18883:19011" ph="..." />
+            <marker date="1508183358947" expanded="true" signature="19069:19083" ph="..." />
+            <marker date="1508183358947" expanded="true" signature="19213:19227" ph="..." />
+            <marker date="1508183358947" expanded="true" signature="19467:19474" ph="SELECT ANML_... SIGHT" />
+            <marker date="1508183358947" expanded="true" signature="19467:19492" ph="SELECT * FRO... SYSTEM_USER" />
+            <marker date="1508183358947" expanded="true" signature="20280:21008" ph="SELECT ANML_... SIGHT" />
+            <marker date="1508183358947" expanded="true" signature="22597:22641" ph="INSERT INTO ANML_CLASS... " />
+            <marker date="1508183358947" expanded="true" signature="22597:22675" ph="INSERT INTO ANML_CLASS... " />
+            <marker date="1508183358947" expanded="true" signature="22982:23076" ph="INSERT INTO ANML_ORDER... " />
+            <marker date="1508183358947" expanded="true" signature="23443:23549" ph="INSERT INTO ANML_SUBORDER... " />
+            <marker date="1508183358947" expanded="true" signature="23917:24018" ph="INSERT INTO ANML_FAMILY... " />
+            <marker date="1508183358947" expanded="true" signature="24384:24483" ph="INSERT INTO ANML_GENDER... " />
+            <marker date="1508183358947" expanded="true" signature="24849:25106" ph="INSERT INTO ANML_SPECIE... " />
           </folding>
         </state>
       </provider>
