@@ -14,13 +14,18 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script src="js/modernizr.custom.js"></script>
 </head>
-<body scroll="no" style="overflow: hidden">
+<body scroll="no" style="overflow: hidden; background-color: #ef5350">
 <div class="container">
     <div class="hero">
         <div class="hero__back hero__back--static"></div>
         <div class="hero__back hero__back--mover"></div>
         <div class="hero__front"></div>
+
     </div>
+
+
+
+
     <header class="codrops-header">
         <h1 class="codrops-title">Bird <span>House</span></h1>
 
@@ -30,6 +35,7 @@
             <a class="menu__item" href="login.php"><span>Login</span></a>
         </nav>
     </header>
+
 
 
 </div>
