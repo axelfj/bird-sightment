@@ -4,7 +4,7 @@
 
 Se debe crear una base de datos que registre avistamiento de aves, registrado por usuarios.
 
-## Creditos
+## Créditos
 
 Brenes Maleaño Andrés Brenes.
 
